@@ -1,0 +1,12 @@
+header {
+  padding: 4.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (width >= 1024px) {
+  header {
+    justify-content: start;
+    padding: 7.6rem 12rem;
+  }
+}
