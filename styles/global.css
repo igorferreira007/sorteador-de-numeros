@@ -69,8 +69,14 @@ a {
   color: inherit;
 }
 
+input {
+  font: var(--display-small);
+}
+
 button, input {
   border: none;
+  color: inherit;
+  font: var(--ff-roboto-flex);
 }
 
 li {

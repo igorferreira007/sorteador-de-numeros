@@ -7,6 +7,7 @@ main {
   main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, min-content);
+    column-gap: 10rem;
     padding-block: 3.4rem;
 
     #title {

@@ -1,0 +1,113 @@
+#content-form {
+  margin-top: 4.4rem;
+
+  & h2 {
+    font: var(--label-medium);
+    text-transform: uppercase;
+  }
+
+  & p {
+    font: var(--paragraph-medium);
+    color: var(--content-tertiary);
+  }
+}
+
+#content-form form {
+  & > div:nth-child(1) {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 4rem;
+
+    & .input-wrapper {
+      display: grid;
+      justify-items: center;
+      gap: 0.8rem;
+    }
+
+    & input[type="number"] {
+      background-color: var(--background-secondary);
+      width: 8.6rem;
+      height: 5.6rem;
+      border-radius: 0.8rem;
+      color: var(--content-primary);
+      outline: none;
+      text-align: center;
+      -moz-appearance: textfield;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none; /* Remove no Chrome, Edge e Safari */
+        margin: 0;
+      }
+    }
+
+    & label {
+      font: var(--label-small);
+      text-transform: uppercase;
+      color: var(--content-secondary);
+    }
+  }
+
+  #toggle-wrapper {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 2rem;
+
+    & input[type="checkbox"] {
+      all: unset;
+      width: 2.4rem;
+      height: 2rem;
+      border-radius: 1.6rem;
+      display: flex;
+      align-items: center;
+      padding-inline: 0.3rem;
+      background: var(--content-tertiary);
+
+      &::before {
+        content: "";
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        background-color: var(--content-primary);
+        transition: transform 0.2s ease;
+      }
+
+      &:checked {
+        background: linear-gradient(91deg, #d586e0 0%, #91a1fa 98.93%);
+
+        &::before {
+          transform: translateX(10px);
+        }
+      }
+    }
+
+    & label {
+      font-size: 1.2rem;
+    }
+  }
+
+  & > button {
+    background-color: var(--background-tertiary);
+    width: 100%;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.8rem;
+    margin-top: 4rem;
+  }
+}
+
+@media (width >= 1024px) {
+  #content-form {
+    /* margin: 0; */
+
+    & p {
+      font: var(--paragraph-large);
+    }
+  }
+}
