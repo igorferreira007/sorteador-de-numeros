@@ -1,0 +1,29 @@
+#questions {
+  margin-top: 8rem;
+
+  & li {
+    display: flex;
+    gap: .8rem;
+    align-items: start;
+
+    & h3 {
+      color: var(--content-brand);
+      font: var(--paragraph-medium);
+    }
+
+    & p {
+      color: var(--content-secondary);
+      font: var(--paragraph-small);
+    }
+  }
+
+  & li + li {
+    margin-top: 3.6rem;
+  }
+}
+
+@media (width >= 1024px) {
+  #questions {
+    margin-top: 4rem;
+  }
+}

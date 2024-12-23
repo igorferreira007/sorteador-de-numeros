@@ -1,6 +1,7 @@
 main {
   display: grid;
   padding-inline: 3.2rem;
+  padding-bottom: 4.4rem;
 }
 
 @media (width >= 1024px) {
