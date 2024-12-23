@@ -16,9 +16,74 @@
   </head>
   <body>
     <div id="app">
-      <header>
-        <img src="./assets/logo.svg" alt="">
+      <header class="container">
+        <img src="./assets/logo.svg" alt="" />
       </header>
+
+      <main class="container">
+        <div id="title">
+          <span>Online - gratuito</span>
+          <h1>Sorteador de números</h1>
+        </div>
+
+        <div id="content-form">
+          <h2>Quero sortear:</h2>
+          <p>
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e
+            veja os resultados na tela. É rápido e fácil!
+          </p>
+
+          <form>
+            <div>
+              <div class="input-wrapper">
+                <label for="">Números</label>
+                <input type="number" />
+              </div>
+              <div class="input-wrapper">
+                <label for="">De</label>
+                <input type="number" />
+              </div>
+              <div class="input-wrapper">
+                <label for="">Até</label>
+                <input type="number" />
+              </div>
+            </div>
+
+            <div>
+              <input type="checkbox" name="" id="" />
+              <label for="">Não repetir número</label>
+            </div>
+
+            <button>
+              <span>Sortear</span>
+              <img src="./assets/arrow-right.svg" alt="" />
+            </button>
+          </form>
+        </div>
+
+        <ul id="questions">
+          <li>
+            <img src="./assets/person-dialogue.svg" alt="" />
+            <div>
+              <h3>Como funciona o sorteador de números?</h3>
+              <p>
+                O sorteador utiliza um algoritmo de geração aleatória para criar
+                números dentro do intervalo especificado pelo usuário.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/person-dialogue.svg" alt="" />
+            <div>
+              <h3>Posso escolher o intervalo dos números?</h3>
+              <p>
+                Sim, você pode definir os valores mínimo e máximo para o
+                intervalo dos números sorteados.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </main>
     </div>
 
     <script src="./js/script.js"></script>

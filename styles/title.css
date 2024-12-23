@@ -1,0 +1,23 @@
+#title {
+  display: grid;
+  gap: .8rem;
+
+  & span {
+    text-transform: uppercase;
+    font: var(--overline);
+    background: linear-gradient(90deg, var(--content-secondary), var(--background-gray)); /* Gradiente */
+    -webkit-background-clip: text; /* Clipa o gradiente ao texto */
+    -webkit-text-fill-color: transparent; /* Deixa o texto transparente */
+  }
+
+  & h1 {
+    text-transform: uppercase;
+    font: var(--display-large);
+  }
+}
+
+@media (width >= 1024px) {
+  #title {
+    gap: 1.2rem;
+  }
+}

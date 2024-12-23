@@ -1,12 +1,13 @@
 header {
-  padding: 4.4rem;
+  padding-block: 4.4rem;
   display: flex;
   justify-content: center;
+  padding-inline: 3.2rem;
 }
 
 @media (width >= 1024px) {
   header {
     justify-content: start;
-    padding: 7.6rem 12rem;
+    padding-block: 7.6rem;
   }
 }

@@ -1,0 +1,27 @@
+main {
+  display: grid;
+  padding-inline: 3.2rem;
+}
+
+@media (width >= 1024px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, min-content);
+    padding-block: 3.4rem;
+
+    #title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    #content-form {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+
+    #questions {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+  }
+}
