@@ -1,0 +1,26 @@
+
+.button-wrapper {
+  margin-top: 4rem;
+  padding: 2px;
+  border-radius: .8rem;
+  background-color: var(--background-tertiary);
+
+  & button {
+    background-color: var(--background-tertiary);
+    width: 100%;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.7rem;
+    outline: none;
+  }
+
+  &:hover,
+  &:has(:focus) {
+    background: linear-gradient(90deg, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  }
+}
