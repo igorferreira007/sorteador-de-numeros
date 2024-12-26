@@ -1,5 +1,6 @@
 #title {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: .8rem;
 
   & span {

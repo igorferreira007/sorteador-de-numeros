@@ -24,6 +24,8 @@
 
 @media (width >= 1024px) {
   #questions {
-    margin-top: 4rem;
+    margin-top: 3.8rem;
+    max-width: 38.6rem;
+    width: 100%;
   }
 }

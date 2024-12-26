@@ -1,0 +1,43 @@
+#draw-result {
+  margin-top: 4.4rem;
+
+  & h2 {
+    font: var(--label-medium);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  & p {
+    font: var(--paragraph-medium);
+    color: var(--content-tertiary);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .content-number {
+    width: max-content;
+    margin-inline: auto;
+    display: flex;
+    gap: 3.2rem;
+    margin-top: 6.8rem;
+    
+    & span {
+      font-family: var(--ff-roboto-mono);
+      font-size: 4.8rem;
+      font-weight: 700;
+      color: var(--content-brand);
+    }
+  }
+
+  .button-wrapper {
+    margin-top: 6.8rem;
+  }
+}
+
+@media (width >= 1024px) {
+  #draw-result {
+    & p {
+      font: var(--paragraph-large);
+    }
+  }
+}

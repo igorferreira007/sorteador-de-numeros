@@ -4,6 +4,14 @@
   margin: 0 auto;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
+
 @media (width >= 1024px) {
   .container {
     max-width: 116.4rem;
