@@ -24,23 +24,6 @@
       gap: 0.8rem;
     }
 
-    & input[type="number"] {
-      background-color: var(--background-secondary);
-      width: 8.6rem;
-      height: 5.6rem;
-      border-radius: 0.8rem;
-      color: var(--content-primary);
-      outline: none;
-      text-align: center;
-      -moz-appearance: textfield;
-
-      &::-webkit-inner-spin-button,
-      &::-webkit-outer-spin-button {
-        -webkit-appearance: none; /* Remove no Chrome, Edge e Safari */
-        margin: 0;
-      }
-    }
-
     & label {
       font: var(--label-small);
       text-transform: uppercase;
