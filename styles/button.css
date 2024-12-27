@@ -1,8 +1,7 @@
-
 .button-wrapper {
   margin-top: 4rem;
   padding: 2px;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   background-color: var(--background-tertiary);
 
   & button {
@@ -21,6 +20,17 @@
 
   &:hover,
   &:has(:focus) {
-    background: linear-gradient(90deg, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+    background: linear-gradient(
+      90deg,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%
+    );
+
+    & button {
+      background-color: var(--background-secondary);
+    }
   }
 }
