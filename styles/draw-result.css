@@ -15,7 +15,6 @@
   }
 
   .content-number {
-    /* width: max-content; */
     width: 100%;
     margin-inline: auto;
     display: flex;
@@ -29,6 +28,7 @@
       font-size: 4.8rem;
       font-weight: 700;
       color: var(--content-brand);
+      animation: showNumbers 1s ease;
     }
   }
 
@@ -42,5 +42,15 @@
     & p {
       font: var(--paragraph-large);
     }
+  }
+}
+
+@keyframes showNumbers {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
   }
 }
